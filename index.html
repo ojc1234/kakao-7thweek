@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Typing game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main-object">
+        <h1>Typing game!</h1>
+        <p><i class="fa-solid fa-keyboard" style="font-size:24px;color:#555555;"></i>
+            Practice your typing skills with a quote from Sherlock Holmes. Click
+            <b style="font-size: 150%;">start</b> to begin!
+        </p>
+        <p id="quote"></p>
+        <p id="message"></p>
+        <div>
+            <input type="text" aria-label="current word" id="typed-value" />
+            <button type="button" id="start"> Start</button>
+        </div>
+    </div>
+
+
+    <div class="modal" style="display:none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Game End you Win</h2>
+                <h2 class="score">Your Score: </h2>
+            </div>
+            <div class="modal-body" style="display: flex;">
+                <p style="margin-right: 5px;">Retry</p>
+                <button class="ok-button">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
